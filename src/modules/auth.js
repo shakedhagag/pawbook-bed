@@ -43,8 +43,9 @@ export const protect = (req, res, next) => {
   try {
     const user = jwt.verify(token, process.env.JWT_SECRET);
     req.user = user;
+    next();
   } catch (err) {
+    next(err);
     return res.status(401).json({ message: "Unauthorized" });
   }
-  next();
 };

@@ -1,56 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
 datasource db {
   provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
-generator client {
-  provider = "prisma-client-js"
+model Comment {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}
+
+model Dog {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}
+
+model Friendship {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}
+
+model Post {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
 }
 
 model User {
   id       String @id @default(auto()) @map("_id") @db.ObjectId
   email    String @unique
-  password String
   name     String
-}
-
-// model Dog {
-//   id                   String       @id @default(auto()) @map("_id") @db.ObjectId
-//   name                 String
-//   breed                String
-//   age                  Int
-//   ownerId              String       @map("owner_id") @db.ObjectId
-//   owner                User         @relation(fields: [ownerId], references: [id])
-//   posts                Post[]
-//   initiatedFriendships Friendship[] @relation("FriendshipDog1")
-//   receivedFriendships  Friendship[] @relation("FriendshipDog2")
-//   Comment              Comment[]
-// }
-
-model Post {
-  id        String    @id @default(auto()) @map("_id") @db.ObjectId
-  content   String
-  createdAt DateTime  @default(now())
-  dogId     String    @map("dog_id") @db.ObjectId
-  // dog       Dog       @relation(fields: [dogId], references: [id])
-  comments  Comment[]
-}
-
-model Friendship {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  createdAt DateTime @default(now())
-  // dogId1    String   @map("dog_id_1") @db.ObjectId
-  // dog1      Dog      @relation("FriendshipDog1", fields: [dogId1], references: [id])
-  // dogId2    String   @map("dog_id_2") @db.ObjectId
-  // dog2      Dog      @relation("FriendshipDog2", fields: [dogId2], references: [id])
-}
-
-model Comment {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  content   String
-  createdAt DateTime @default(now())
-  // dogId     String   @map("dog_id") @db.ObjectId
-  // dog       Dog      @relation(fields: [dogId], references: [id])
-  postId    String   @map("post_id") @db.ObjectId
-  post      Post     @relation(fields: [postId], references: [id])
+  password String
 }

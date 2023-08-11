@@ -7,9 +7,13 @@ export async function getAllUsers() {
 }
 
 export async function getUserById(id) {
-  return await prisma.user.findUnique({
-    where: { id: id },
-  });
+  try {
+    return await prisma.user.findUnique({
+      where: { id: id },
+    });
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 export const createUser = async (req, res) => {
@@ -69,8 +73,23 @@ export const loginUser = async (req, res) => {
 export const getUser = async (req, res, next) => {
   try {
     const user = req.user;
+    next();
     return res.status(200).json(user);
   } catch (error) {
+    next(error);
     return res.status(500).json({ error: error.message });
+  }
+};
+
+export const verifyToken = async (req, res, next) => {
+  try {
+    res.status(200).json({
+      success: true,
+      message: "Token is valid",
+      user: req.user, // Optional: Return user data if needed
+    });
+    next();
+  } catch (error) {
+    next(error);
   }
 };
