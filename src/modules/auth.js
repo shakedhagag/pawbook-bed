@@ -3,7 +3,6 @@ import bcrypt from "bcrypt";
 
 export const hashPassword = async (password) => {
   const salt = await bcrypt.genSalt(10);
-  console.log(password, salt);
   const hash = await bcrypt.hash(password, salt);
   return hash;
 };
@@ -32,6 +31,8 @@ export const createToken = (client) => {
 };
 
 export const protect = (req, res, next) => {
+  const cookieToken = req.cookies;
+
   const bearer = req.headers.authorization;
   if (!bearer || !bearer.startsWith("Bearer ")) {
     return res.status(401).json({ message: "Unauthorized" });
@@ -43,6 +44,7 @@ export const protect = (req, res, next) => {
   try {
     const user = jwt.verify(token, process.env.JWT_SECRET);
     req.user = user;
+    console.log(user);
     next();
   } catch (err) {
     next(err);

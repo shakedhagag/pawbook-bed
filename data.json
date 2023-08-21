@@ -1,0 +1,78 @@
+{
+    "users": {
+        "60f7d249a892b3a50fde365a": {
+            "email": "user1@example.com",
+            "name": "John Doe",
+            "password": "$2b$10$6RSMS93lkx1zfbHWb0cof.wQ.w0USIeLkHMxN/1C2AMldgYdfH8sG"
+        },
+        "60f7d249a892b3a50fde365b": {
+            "email": "user2@example.com",
+            "name": "Jane Smith",
+            "password": "$2b$10$DrPXzdGr8kVLRd2/8ho4su4k.cn3keommeRR3oVptdpGIki4IeK9m"
+        },
+        "60f7d249a892b3a50fde365c": {
+            "email": "user3@example.com",
+            "name": "Alice Brown",
+            "password": "$2b$10$DTHQvwDZrvuH1tBadkJ7SuBodtVB9CVbpju5x.6bU/9e8uNHxnnJm"
+        },
+        "60f7d249a892b3a50fde365d": {
+            "email": "user4@example.com",
+            "name": "Bob White",
+            "password": "$2b$10$GpEPBgmSmyPCpq4rTld2f.kBLHn4oP7VolOGSfhp5eMv7lbVeBQwy"
+        },
+        "60f7d249a892b3a50fde365e": {
+            "email": "user5@example.com",
+            "name": "Charlie Green",
+            "password": "$2b$10$vbnjhA6JugKRy6me4uQoIOoTZag0fsAeAIML7NdnTq3YEaMS7IU3q"
+        },
+        "60f7d249a892b3a50fde365f": {
+            "email": "user6@example.com",
+            "name": "Denise Blue",
+            "password": "$2b$10$o4ZS5txYLDvZGMccaUdXguoZkR6FYqLlD5mb1ds2hHBgZy/0M8BEu"
+        },
+        "60f7d249a892b3a50fde3660": {
+            "email": "user7@example.com",
+            "name": "Edward Red",
+            "password": "$2b$10$hJ09Qy13N4C3IV/5urn63OnMrAe4IOlYLN2Yk8wsQ17ouF8nGD976"
+        },
+        "60f7d249a892b3a50fde3661": {
+            "email": "user8@example.com",
+            "name": "Freya Yellow",
+            "password": "$2b$10$dK42vrC9D58zIcmH.6VlyuPqkm8fjovND33s4CTp/4vzWxFYdizfK"
+        },
+        "60f7d249a892b3a50fde3662": {
+            "email": "user9@example.com",
+            "name": "George Purple",
+            "password": "$2b$10$49vk/Ygj50HbllI1d3tdnu0691NBNFat1rjcg1tra/MGvaejBCo22"
+        },
+        "60f7d249a892b3a50fde3663": {
+            "email": "user10@example.com",
+            "name": "Hannah Pink",
+            "password": "$2b$10$EOvdvaIIHAYAOcth8FrMiuR3E38HVxsrJlFaJyMV8dSiBafFPIDpC"
+        },
+        "281e0cd8-f547-4cc6-8440-e536b45bd27a": {
+            "email": "shok221@gmail.com",
+            "name": "test22",
+            "password": "$2b$10$N55GAYXPlXqqeVLoS8ouE.RwPAfnQijPyCMGv6xPCkZwSZ7f8QPSS"
+        },
+        "1a9fe92a-2b1d-437f-8d65-6376d1445551": {
+            "email": "shok@gmail.com",
+            "name": "test",
+            "password": "$2b$10$HsOeyMDa/UbtH8UV/YIOE.Lo40PquxUcO49l.ZI6Oxp3np7pw5Cpu"
+        }
+    },
+    "posts": {
+        "1": {
+            "users_id": "1a9fe92a-2b1d-437f-8d65-6376d1445551",
+            "text": "Some text content here",
+            "image": "https://thispersondoesnotexist.com/",
+            "feeling": "Happy"
+        },
+        "431f77a1-406c-40e0-ba48-6d03a409ebd1": {
+            "users_id": "1a9fe92a-2b1d-437f-8d65-6376d1445551",
+            "text": "Hello World!",
+            "image": "https://thispersondoesnotexist.com/",
+            "feeling": "Happy"
+        }
+    }
+}
