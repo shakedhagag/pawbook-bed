@@ -18,12 +18,14 @@ export const comparePassword = async (password, hash) => {
  * @returns
  */
 export const createToken = (client) => {
+  console.log(client);
   const token = jwt.sign(
     {
-      id: client.id,
       email: client.email,
       name: client.name,
-      phoneNumber: client.phoneNumber,
+      password: client.password,
+      owner_img: client.owner_img,
+      dog_img: client.dog_img,
     },
     process.env.JWT_SECRET
   );

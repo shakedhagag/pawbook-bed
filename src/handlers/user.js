@@ -4,6 +4,7 @@ import prisma from "../db.js";
 import { hashPassword } from "../modules/auth.js";
 import { createToken, comparePassword } from "../modules/auth.js";
 import { saveData } from "./data.js";
+import e from "express";
 
 export async function getAllUsers() {
   return await prisma.user.findMany();
@@ -60,19 +61,22 @@ export const getUserId = (email, data) => {
 };
 
 export const findUserByEmail = (email, data) => {
-  for (const userId in data.users) {
-    if (data.users[userId].email === email) {
-      return { user: data.users[userId], id: userId };
+  try {
+    for (const userId in data.users) {
+      if (data.users[userId].email === email) {
+        return { user: data.users[userId], id: userId };
+      }
     }
+  } catch (error) {
+    console.log(error);
   }
-  return null;
 };
 
 export const createUser = async (req, res) => {
   try {
     const { data } = req;
     const { email, password, name } = req.body;
-    const existingUser = findUserByEmail(email, data).user;
+    const existingUser = findUserByEmail(email, data)?.user;
     if (existingUser) {
       return res.status(400).json({ message: "User already exists" });
     }

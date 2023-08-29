@@ -19,6 +19,7 @@ import {
   initDogImg,
 } from "./modules/middleware.js";
 import { createPost, getAllPosts, deletePost } from "./handlers/post.js";
+import { getAllFriends, unfollowFriend } from "./handlers/friends.js";
 
 const app = express();
 
@@ -58,5 +59,7 @@ app.get("/verify-token", protect, attachData(data), verifyToken);
 app.get("/user/:id", attachData(data), getUserByIdRoute);
 app.post("/create-post", attachData(data), createPost);
 app.post("/delete-post", attachData(data), deletePost);
+app.get("/friends", attachData(data), getAllFriends);
+app.delete("/friends", attachData(data), unfollowFriend);
 
 export default app;
