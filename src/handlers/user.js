@@ -1,14 +1,26 @@
-// import e from "express";
 import { v4 as uuidv4 } from "uuid";
 import prisma from "../db.js";
 import { hashPassword } from "../modules/auth.js";
 import { createToken, comparePassword } from "../modules/auth.js";
 import { saveData } from "./data.js";
-import e from "express";
 
-export async function getAllUsers() {
-  return await prisma.user.findMany();
-}
+export const getAllUsers = async (req, res) => {
+  try {
+    const { data } = req;
+    const users = data.users;
+    const ReplaceKeys = (input) => {
+      return Object.entries(input).reduce((acc, [id, value]) => {
+        const { name, dog_img } = value;
+        acc[name] = { id, dog_img };
+        return acc;
+      }, {});
+    };
+    const newUsers = ReplaceKeys(users);
+    res.status(200).json(newUsers);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
 
 export const getUserByIdRoute = async (req, res) => {
   try {
@@ -139,6 +151,7 @@ export const verifyToken = async (req, res, next) => {
       message: "Token is valid",
       user: currentUser,
       id: currentUserId,
+      isAdmin: currentUser?.isAdmin,
     });
     next();
   } catch (error) {

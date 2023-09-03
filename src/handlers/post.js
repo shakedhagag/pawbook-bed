@@ -1,12 +1,14 @@
 import { v4 as uuidv4 } from "uuid";
-import fs from "fs";
-import path from "path";
 import { saveData } from "./data.js";
 import { getUserId } from "./user.js";
 
 export const createPost = async (req, res) => {
   const { data } = req;
   const { email, text, image, feeling } = req.body;
+  if (text.length > 300) {
+    return res.status(400).json({ error: "Post too long." });
+  }
+
   const users_id = getUserId(email, data);
   if (!data.users[users_id]) {
     return res.status(400).json({ error: "User not found." });

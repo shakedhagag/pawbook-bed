@@ -64,7 +64,11 @@
       "password": "$2b$10$vbnjhA6JugKRy6me4uQoIOoTZag0fsAeAIML7NdnTq3YEaMS7IU3q",
       "owner_img": "https://thispersondoesnotexist.com/",
       "dog_img": "https://images.dog.ceo/breeds/labradoodle/lola.jpg",
-      "friends": ["60f7d249a892b3a50fde365b", "60f7d249a892b3a50fde3663"]
+      "friends": [
+        "60f7d249a892b3a50fde365b",
+        "60f7d249a892b3a50fde3663",
+        "60f7d249a892b3a50fde365f"
+      ]
     },
     "60f7d249a892b3a50fde365f": {
       "email": "user6@example.com",
@@ -146,6 +150,7 @@
       "email": "shaked@gmail.com",
       "name": "Shaked Hagag",
       "password": "$2b$10$Me9/JCWgzZ.EqXJKkk2NYumUFA7Bvvx0eYG519ZtNNCWfLLyNoQgK",
+      "isAdmin": true,
       "friends": [
         "60f7d249a892b3a50fde365b",
         "60f7d249a892b3a50fde365c",
@@ -153,10 +158,9 @@
         "60f7d249a892b3a50fde365e",
         "60f7d249a892b3a50fde365f",
         "60f7d249a892b3a50fde3660",
-        "60f7d249a892b3a50fde3661",
-        "60f7d249a892b3a50fde3662",
-        "60f7d249a892b3a50fde3663"
-      ]
+        "1a9fe92a-2b1d-437f-8d65-6376d1445551"
+      ],
+      "dog_img": "http://localhost:3030/uploads/1693663968974-IMG_1815.jpeg/8d16b167-fe3d-49e0-8357-51a2c38c109c"
     }
   },
   "posts": {
@@ -222,6 +226,19 @@
       "image": "https://images.unsplash.com/photo-1561754050-9a1ee0470c73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       "feeling": "happy",
       "timestamp": 1692817428085
+    }
+  },
+  "profiles": {
+    "8d16b167-fe3d-49e0-8357-51a2c38c109c": {
+      "description": "The French Bulldog, with its distinct bat ears and compact size, stands out as a favorite among dog lovers. Their affectionate and playful nature makes them perfect companions. Suited for city dwellers, they require less exercise than other breeds. Their expressive eyes and endearing expressions effortlessly capture hearts. Despite their small stature, they exude a big personality, ensuring there's never a dull moment with them around. Additionally, their adaptability to various living situations and their loyalty to their owners further amplify their greatness. This unique combination of characteristics makes the French Bulldog arguably the most charming and beloved dog on Earth.",
+      "title": "CEO of Frenchies"
+    }
+  },
+  "admin": {
+    "pages": {
+      "friends": true,
+      "posts": true,
+      "edit profile": true
     }
   }
 }
