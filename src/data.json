@@ -160,7 +160,6 @@
             "password": "$2b$10$Me9/JCWgzZ.EqXJKkk2NYumUFA7Bvvx0eYG519ZtNNCWfLLyNoQgK",
             "isAdmin": true,
             "friends": [
-                "60f7d249a892b3a50fde365b",
                 "60f7d249a892b3a50fde365c",
                 "60f7d249a892b3a50fde365d",
                 "60f7d249a892b3a50fde365e",
@@ -286,6 +285,34 @@
             "image": "https://example.com/test-image.jpg",
             "feeling": "happy",
             "timestamp": 1694016705110
+        },
+        "00b411b1-3c99-448d-9335-3bf4d64ae895": {
+            "users_id": "8d16b167-fe3d-49e0-8357-51a2c38c109c",
+            "text": "This is a test post",
+            "image": "https://example.com/test-image.jpg",
+            "feeling": "happy",
+            "timestamp": 1694021127971
+        },
+        "c0eb160a-8e6f-4d08-ab34-39411089f1cf": {
+            "users_id": "8d16b167-fe3d-49e0-8357-51a2c38c109c",
+            "text": "This is a test post",
+            "image": "https://example.com/test-image.jpg",
+            "feeling": "happy",
+            "timestamp": 1694021206148
+        },
+        "a75c45eb-b4d2-4006-9a95-64a9be38a8f6": {
+            "users_id": "8d16b167-fe3d-49e0-8357-51a2c38c109c",
+            "text": "This is a test post",
+            "image": "https://example.com/test-image.jpg",
+            "feeling": "happy",
+            "timestamp": 1694021321486
+        },
+        "4c648761-8dd8-4d61-873f-aee4d37a850a": {
+            "users_id": "8d16b167-fe3d-49e0-8357-51a2c38c109c",
+            "text": "This is a test post",
+            "image": "https://example.com/test-image.jpg",
+            "feeling": "happy",
+            "timestamp": 1694021338914
         }
     },
     "profiles": {
@@ -294,15 +321,18 @@
             "title": "CEO of Frenchies"
         },
         "8cd036d3-89dd-4080-b958-0e2618a36ce3": {
-            "title": "Its 4:20 fo' shizzle",
+            "title": "Snoop Doggy Dogg",
             "description": "\"Chillin' with my main pup, ridin' the West Coast vibe. Ain't nothin' like that dogg love, ya dig? From the LBC to wherever I be, my dog always rollin' with me. 🐾 #DoggLife\""
         }
     },
     "admin": {
         "pages": {
-            "friends": true,
-            "editProfile": true,
-            "posts": true
+            "friends": false,
+            "editProfile": false,
+            "posts": false,
+            "home": true,
+            "about": true,
+            "contact": true
         },
         "loginActivity": {
             "8d16b167-fe3d-49e0-8357-51a2c38c109c": {
@@ -347,6 +377,62 @@
             },
             "e8cbeace-db5a-46ad-8714-075ecb86f38f": {
                 "loginTime": "2023-09-06T16:11:45.097Z",
+                "logoutTime": ""
+            },
+            "e9969775-0d71-4f6d-b1cb-31935c716378": {
+                "loginTime": "2023-09-06T17:25:27.962Z",
+                "logoutTime": ""
+            },
+            "fb38b77b-9433-4a45-9651-82a5d1da2a93": {
+                "loginTime": "2023-09-06T17:26:46.138Z",
+                "logoutTime": ""
+            },
+            "c15194b6-39e4-4b15-ab93-6400e212187f": {
+                "loginTime": "2023-09-06T17:28:41.476Z",
+                "logoutTime": ""
+            },
+            "5da072f4-ba04-4c3a-ab32-3c392240987c": {
+                "loginTime": "2023-09-06T17:28:58.904Z",
+                "logoutTime": ""
+            },
+            "19db2bc3-0c62-49ff-ae01-516a0c7ad641": {
+                "loginTime": "2023-09-06T17:29:28.505Z",
+                "logoutTime": ""
+            },
+            "121f1209-d874-436e-994a-3fc7cfae686c": {
+                "loginTime": "2023-09-06T17:34:36.704Z",
+                "logoutTime": ""
+            },
+            "f5dfe8a3-d6a2-498a-8a08-cca7728053a6": {
+                "loginTime": "2023-09-06T17:35:04.379Z",
+                "logoutTime": ""
+            },
+            "c40b87dc-a618-406c-ab93-478f1f6795e9": {
+                "loginTime": "2023-09-06T17:35:37.508Z",
+                "logoutTime": ""
+            },
+            "aa674b47-b817-46db-9704-c50af2fd7bc8": {
+                "loginTime": "2023-09-06T17:36:24.104Z",
+                "logoutTime": ""
+            },
+            "88913ec2-652f-45bd-b188-fc172ed74519": {
+                "loginTime": "2023-09-06T17:37:24.445Z",
+                "logoutTime": ""
+            },
+            "e4e17b92-a398-4147-8834-81168cd6d17d": {
+                "loginTime": "2023-09-06T17:37:51.383Z",
+                "logoutTime": ""
+            },
+            "ec08f900-9558-4daf-bfec-66f58b164eba": {
+                "loginTime": "2023-09-06T17:38:19.975Z",
+                "logoutTime": ""
+            },
+            "a336292f-3ff7-4650-8828-f9e0f704ef7a": {
+                "loginTime": "2023-09-06T17:41:56.591Z",
+                "logoutTime": ""
+            },
+            "e1cc7d44-c84d-4d28-876f-b4926a325408": {
+                "loginTime": "2023-09-06T17:45:24.806Z",
                 "logoutTime": ""
             }
         }
