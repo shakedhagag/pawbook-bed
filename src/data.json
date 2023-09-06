@@ -1,244 +1,354 @@
 {
-  "users": {
-    "60f7d249a892b3a50fde365a": {
-      "email": "user1@example.com",
-      "name": "John Doe",
-      "password": "$2b$10$6RSMS93lkx1zfbHWb0cof.wQ.w0USIeLkHMxN/1C2AMldgYdfH8sG",
-      "owner_img": "https://thispersondoesnotexist.com/",
-      "dog_img": "https://images.dog.ceo/breeds/mountain-swiss/n02107574_1661.jpg",
-      "friends": [
-        "60f7d249a892b3a50fde365b",
-        "60f7d249a892b3a50fde365c",
-        "60f7d249a892b3a50fde365d",
-        "60f7d249a892b3a50fde3661",
-        "60f7d249a892b3a50fde3662",
-        "60f7d249a892b3a50fde3663"
-      ]
+    "users": {
+        "60f7d249a892b3a50fde365a": {
+            "email": "user1@example.com",
+            "name": "John Doe",
+            "password": "$2b$10$6RSMS93lkx1zfbHWb0cof.wQ.w0USIeLkHMxN/1C2AMldgYdfH8sG",
+            "owner_img": "https://thispersondoesnotexist.com/",
+            "dog_img": "https://images.dog.ceo/breeds/mountain-swiss/n02107574_1661.jpg",
+            "friends": [
+                "60f7d249a892b3a50fde365b",
+                "60f7d249a892b3a50fde365c",
+                "60f7d249a892b3a50fde365d",
+                "60f7d249a892b3a50fde3661",
+                "60f7d249a892b3a50fde3662",
+                "60f7d249a892b3a50fde3663"
+            ]
+        },
+        "60f7d249a892b3a50fde365b": {
+            "email": "user2@example.com",
+            "name": "Jane Smith",
+            "password": "$2b$10$DrPXzdGr8kVLRd2/8ho4su4k.cn3keommeRR3oVptdpGIki4IeK9m",
+            "owner_img": "https://thispersondoesnotexist.com/",
+            "dog_img": "https://images.dog.ceo/breeds/rottweiler/n02106550_10635.jpg",
+            "friends": [
+                "60f7d249a892b3a50fde365b",
+                "60f7d249a892b3a50fde365f",
+                "60f7d249a892b3a50fde3660",
+                "60f7d249a892b3a50fde3661",
+                "60f7d249a892b3a50fde3662",
+                "60f7d249a892b3a50fde3663"
+            ]
+        },
+        "60f7d249a892b3a50fde365c": {
+            "email": "user3@example.com",
+            "name": "Alice Brown",
+            "password": "$2b$10$DTHQvwDZrvuH1tBadkJ7SuBodtVB9CVbpju5x.6bU/9e8uNHxnnJm",
+            "owner_img": "https://thispersondoesnotexist.com/",
+            "dog_img": "https://images.dog.ceo/breeds/mountain-swiss/n02107574_1661.jpg",
+            "friends": [
+                "60f7d249a892b3a50fde365b",
+                "60f7d249a892b3a50fde365c",
+                "60f7d249a892b3a50fde365d",
+                "60f7d249a892b3a50fde365e",
+                "60f7d249a892b3a50fde365f"
+            ]
+        },
+        "60f7d249a892b3a50fde365d": {
+            "email": "user4@example.com",
+            "name": "Bob White",
+            "password": "$2b$10$GpEPBgmSmyPCpq4rTld2f.kBLHn4oP7VolOGSfhp5eMv7lbVeBQwy",
+            "owner_img": "https://thispersondoesnotexist.com/",
+            "dog_img": "https://images.dog.ceo/breeds/buhund-norwegian/hakon2.jpg",
+            "friends": [
+                "60f7d249a892b3a50fde365f",
+                "60f7d249a892b3a50fde3660",
+                "60f7d249a892b3a50fde3661",
+                "60f7d249a892b3a50fde3662",
+                "60f7d249a892b3a50fde3663"
+            ]
+        },
+        "60f7d249a892b3a50fde365e": {
+            "email": "user5@example.com",
+            "name": "Charlie Green",
+            "password": "$2b$10$vbnjhA6JugKRy6me4uQoIOoTZag0fsAeAIML7NdnTq3YEaMS7IU3q",
+            "owner_img": "https://thispersondoesnotexist.com/",
+            "dog_img": "https://images.dog.ceo/breeds/labradoodle/lola.jpg",
+            "friends": [
+                "60f7d249a892b3a50fde365b",
+                "60f7d249a892b3a50fde3663",
+                "60f7d249a892b3a50fde365f"
+            ]
+        },
+        "60f7d249a892b3a50fde365f": {
+            "email": "user6@example.com",
+            "name": "Denise Blue",
+            "password": "$2b$10$o4ZS5txYLDvZGMccaUdXguoZkR6FYqLlD5mb1ds2hHBgZy/0M8BEu",
+            "owner_img": "https://thispersondoesnotexist.com/",
+            "dog_img": "https://images.dog.ceo/breeds/retriever-golden/n02099601_2796.jpg",
+            "friends": [
+                "60f7d249a892b3a50fde365b",
+                "60f7d249a892b3a50fde365c"
+            ]
+        },
+        "60f7d249a892b3a50fde3660": {
+            "email": "user7@example.com",
+            "name": "Edward Red",
+            "password": "$2b$10$hJ09Qy13N4C3IV/5urn63OnMrAe4IOlYLN2Yk8wsQ17ouF8nGD976",
+            "owner_img": "https://thispersondoesnotexist.com/",
+            "dog_img": "https://images.dog.ceo/breeds/appenzeller/n02107908_2090.jpg",
+            "friends": [
+                "60f7d249a892b3a50fde365b"
+            ]
+        },
+        "60f7d249a892b3a50fde3661": {
+            "email": "user8@example.com",
+            "name": "Freya Yellow",
+            "password": "$2b$10$dK42vrC9D58zIcmH.6VlyuPqkm8fjovND33s4CTp/4vzWxFYdizfK",
+            "owner_img": "https://thispersondoesnotexist.com/",
+            "dog_img": "https://images.dog.ceo/breeds/malinois/n02105162_10640.jpg",
+            "friends": []
+        },
+        "60f7d249a892b3a50fde3662": {
+            "email": "user9@example.com",
+            "name": "George Purple",
+            "password": "$2b$10$49vk/Ygj50HbllI1d3tdnu0691NBNFat1rjcg1tra/MGvaejBCo22",
+            "owner_img": "https://thispersondoesnotexist.com/",
+            "dog_img": "https://images.dog.ceo/breeds/malinois/n02105162_10640.jpg",
+            "friends": []
+        },
+        "60f7d249a892b3a50fde3663": {
+            "email": "user10@example.com",
+            "name": "Hannah Pink",
+            "password": "$2b$10$EOvdvaIIHAYAOcth8FrMiuR3E38HVxsrJlFaJyMV8dSiBafFPIDpC",
+            "owner_img": "https://thispersondoesnotexist.com/",
+            "dog_img": "https://images.dog.ceo/breeds/mountain-swiss/n02107574_1661.jpg",
+            "friends": [
+                "60f7d249a892b3a50fde365c",
+                "60f7d249a892b3a50fde365d"
+            ]
+        },
+        "281e0cd8-f547-4cc6-8440-e536b45bd27a": {
+            "email": "shok221@gmail.com",
+            "name": "Emily Doe",
+            "password": "$2b$10$N55GAYXPlXqqeVLoS8ouE.RwPAfnQijPyCMGv6xPCkZwSZ7f8QPSS",
+            "owner_img": "https://thispersondoesnotexist.com/",
+            "dog_img": "https://images.dog.ceo/breeds/mountain-swiss/n02107574_1661.jpg",
+            "friends": [
+                "60f7d249a892b3a50fde365b",
+                "60f7d249a892b3a50fde365c",
+                "60f7d249a892b3a50fde365d",
+                "60f7d249a892b3a50fde365e",
+                "60f7d249a892b3a50fde365f",
+                "60f7d249a892b3a50fde3660",
+                "60f7d249a892b3a50fde3661",
+                "60f7d249a892b3a50fde3662",
+                "60f7d249a892b3a50fde3663"
+            ]
+        },
+        "1a9fe92a-2b1d-437f-8d65-6376d1445551": {
+            "email": "shok@gmail.com",
+            "name": "John Doe",
+            "password": "$2b$10$HsOeyMDa/UbtH8UV/YIOE.Lo40PquxUcO49l.ZI6Oxp3np7pw5Cpu",
+            "owner_img": "https://thispersondoesnotexist.com/",
+            "dog_img": "https://images.dog.ceo/breeds/mountain-swiss/n02107574_1661.jpg",
+            "friends": [
+                "60f7d249a892b3a50fde365b",
+                "60f7d249a892b3a50fde365c",
+                "60f7d249a892b3a50fde365d",
+                "60f7d249a892b3a50fde365e",
+                "60f7d249a892b3a50fde365f",
+                "60f7d249a892b3a50fde3660",
+                "60f7d249a892b3a50fde3661",
+                "60f7d249a892b3a50fde3662",
+                "60f7d249a892b3a50fde3663"
+            ]
+        },
+        "8d16b167-fe3d-49e0-8357-51a2c38c109c": {
+            "email": "shaked@gmail.com",
+            "name": "Shaked Hagag",
+            "password": "$2b$10$Me9/JCWgzZ.EqXJKkk2NYumUFA7Bvvx0eYG519ZtNNCWfLLyNoQgK",
+            "isAdmin": true,
+            "friends": [
+                "60f7d249a892b3a50fde365b",
+                "60f7d249a892b3a50fde365c",
+                "60f7d249a892b3a50fde365d",
+                "60f7d249a892b3a50fde365e",
+                "60f7d249a892b3a50fde365f",
+                "60f7d249a892b3a50fde3660",
+                "1a9fe92a-2b1d-437f-8d65-6376d1445551"
+            ],
+            "dog_img": "http://localhost:3030/uploads/1693663968974-IMG_1815.jpeg/8d16b167-fe3d-49e0-8357-51a2c38c109c"
+        },
+        "8cd036d3-89dd-4080-b958-0e2618a36ce3": {
+            "email": "shaked2@gmail.com",
+            "name": "Snoop Dogg",
+            "password": "$2b$10$tUZv3FOfMIeJkHQPxawDduSfHzYF9uNO6EM7pA27IrWtnfTfXOMYC",
+            "friends": [
+                "8d16b167-fe3d-49e0-8357-51a2c38c109c",
+                "60f7d249a892b3a50fde365f"
+            ],
+            "dog_img": "http://localhost:3030/uploads/1694014172222-5405CF73-BF34-4D6F-A771-68F7E73680C4.jpeg/8cd036d3-89dd-4080-b958-0e2618a36ce3"
+        }
     },
-    "60f7d249a892b3a50fde365b": {
-      "email": "user2@example.com",
-      "name": "Jane Smith",
-      "password": "$2b$10$DrPXzdGr8kVLRd2/8ho4su4k.cn3keommeRR3oVptdpGIki4IeK9m",
-      "owner_img": "https://thispersondoesnotexist.com/",
-      "dog_img": "https://images.dog.ceo/breeds/rottweiler/n02106550_10635.jpg",
-      "friends": [
-        "60f7d249a892b3a50fde365b",
-        "60f7d249a892b3a50fde365f",
-        "60f7d249a892b3a50fde3660",
-        "60f7d249a892b3a50fde3661",
-        "60f7d249a892b3a50fde3662",
-        "60f7d249a892b3a50fde3663"
-      ]
+    "posts": {
+        "b6f63153-e417-44e5-80be-2de3f359e2a2": {
+            "users_id": "281e0cd8-f547-4cc6-8440-e536b45bd27a",
+            "text": "Some text content here",
+            "image": "https://images.dog.ceo/breeds/bulldog-english/murphy.jpg",
+            "feeling": "Happy",
+            "timestamp": "2023-08-18T09:52:29.089Z"
+        },
+        "b6f63153-e417-44e5-80be-2de3f359e2a3": {
+            "users_id": "1a9fe92a-2b1d-437f-8d65-6376d1445551",
+            "text": "Hello World!",
+            "image": "https://images.dog.ceo/breeds/malinois/n02105162_6134.jpg",
+            "feeling": "Happy",
+            "timestamp": "2023-08-18T09:52:29.089Z"
+        },
+        "1d9b6e98-5979-4c8a-a35f-0f53991b4d52": {
+            "users_id": "1a9fe92a-2b1d-437f-8d65-6376d1445551",
+            "text": "This is a test post",
+            "image": "https://source.unsplash.com/random/600x300",
+            "feeling": "Happy",
+            "timestamp": "2023-08-18T09:52:29.089Z"
+        },
+        "45d66f0d-da96-4cb7-bc7b-a62e67dbe11c": {
+            "users_id": "60f7d249a892b3a50fde365d",
+            "text": "Hi there, This is my first Post!!!\n",
+            "image": "https://images.dog.ceo/breeds/malinois/n02105162_10640.jpg",
+            "feeling": "Happy",
+            "timestamp": "2023-08-18T17:52:29.089Z"
+        },
+        "6818227e-a9d0-4345-8b6f-f4ee0045db46": {
+            "users_id": "1a9fe92a-2b1d-437f-8d65-6376d1445551",
+            "text": "Just took my first swim at the lake today! 🏊‍♂️",
+            "image": "",
+            "feeling": "Happy",
+            "timestamp": 1692454926154
+        },
+        "5b6d4592-5a6d-4f62-8d0f-a1759e385a00": {
+            "users_id": "1a9fe92a-2b1d-437f-8d65-6376d1445551",
+            "text": "Rocking my new summer cut! ☀️ #FluffyNoMore",
+            "image": "",
+            "feeling": "Happy",
+            "timestamp": 1692454952182
+        },
+        "534e451e-50da-4e0e-9acb-0370df1f3c21": {
+            "users_id": "1a9fe92a-2b1d-437f-8d65-6376d1445551",
+            "text": "Shiba Ino",
+            "image": "https://images.dog.ceo/breeds/shiba/shiba-11.jpg",
+            "feeling": "sad",
+            "timestamp": 1692466974503
+        },
+        "b5b45ee8-fb64-4b8d-b32e-953bd3d08f51": {
+            "users_id": "1a9fe92a-2b1d-437f-8d65-6376d1445551",
+            "text": "This is my chiwawa",
+            "image": "https://images.dog.ceo/breeds/chihuahua/n02085620_2973.jpg",
+            "feeling": "happy",
+            "timestamp": 1692467123904
+        },
+        "b1196d78-dd8b-470a-8578-9659214da7ba": {
+            "users_id": "8d16b167-fe3d-49e0-8357-51a2c38c109c",
+            "text": "Trying to post from my new user! This is awesome. Also, this is an image of my dog, Leo!",
+            "image": "https://images.unsplash.com/photo-1561754050-9a1ee0470c73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+            "feeling": "happy",
+            "timestamp": 1692817428085
+        },
+        "9a520098-ddfb-4b7e-80b4-d6f919e26308": {
+            "users_id": "8cd036d3-89dd-4080-b958-0e2618a36ce3",
+            "text": "🎤 \"Chillin' with my main Dogg 🐾, ridin' low in the LBC. Ain't no other sidekick keeps it as real as he. From the studio to the streets, this pup's got the beat. Snoop and his Dogg, man, we can't be beat! 💯 #DoggLife #WoofWoof\" 🐶🔥",
+            "image": "https://images.unsplash.com/photo-1518700445284-c7212fa9ab88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80",
+            "feeling": "sad",
+            "timestamp": 1694014107879
+        },
+        "e579df08-c9b7-476f-ae0e-23e953fa952f": {
+            "users_id": "f4e92b11-cf8f-4710-bd6f-2a52cf823a57",
+            "text": "This is a test post",
+            "image": "https://example.com/test-image.jpg",
+            "feeling": "happy",
+            "timestamp": 1694016118723
+        },
+        "2e4a32f6-a457-427e-83da-55f3f68ad9ef": {
+            "users_id": "f4e92b11-cf8f-4710-bd6f-2a52cf823a57",
+            "text": "This is a test post",
+            "image": "https://example.com/test-image.jpg",
+            "feeling": "happy",
+            "timestamp": 1694016131795
+        },
+        "9921f820-1602-4e8b-8d9e-d44f940ea22e": {
+            "users_id": "f4e92b11-cf8f-4710-bd6f-2a52cf823a57",
+            "text": "This is a test post",
+            "image": "https://example.com/test-image.jpg",
+            "feeling": "happy",
+            "timestamp": 1694016223397
+        },
+        "77941a72-9b1d-44eb-a67e-f4ac4b460bac": {
+            "users_id": "f4e92b11-cf8f-4710-bd6f-2a52cf823a57",
+            "text": "This is a test post",
+            "image": "https://example.com/test-image.jpg",
+            "feeling": "happy",
+            "timestamp": 1694016337299
+        },
+        "bf71681b-610f-42b7-9630-6b208e3d2ba3": {
+            "users_id": "8d16b167-fe3d-49e0-8357-51a2c38c109c",
+            "text": "This is a test post",
+            "image": "https://example.com/test-image.jpg",
+            "feeling": "happy",
+            "timestamp": 1694016705110
+        }
     },
-    "60f7d249a892b3a50fde365c": {
-      "email": "user3@example.com",
-      "name": "Alice Brown",
-      "password": "$2b$10$DTHQvwDZrvuH1tBadkJ7SuBodtVB9CVbpju5x.6bU/9e8uNHxnnJm",
-      "owner_img": "https://thispersondoesnotexist.com/",
-      "dog_img": "https://images.dog.ceo/breeds/mountain-swiss/n02107574_1661.jpg",
-      "friends": [
-        "60f7d249a892b3a50fde365b",
-        "60f7d249a892b3a50fde365c",
-        "60f7d249a892b3a50fde365d",
-        "60f7d249a892b3a50fde365e",
-        "60f7d249a892b3a50fde365f"
-      ]
+    "profiles": {
+        "8d16b167-fe3d-49e0-8357-51a2c38c109c": {
+            "description": "The French Bulldog, with its distinct bat ears and compact size, stands out as a favorite among dog lovers. Their affectionate and playful nature makes them perfect companions. Suited for city dwellers, they require less exercise than other breeds. Their expressive eyes and endearing expressions effortlessly capture hearts. Despite their small stature, they exude a big personality, ensuring there's never a dull moment with them around. Additionally, their adaptability to various living situations and their loyalty to their owners further amplify their greatness. This unique combination of characteristics makes the French Bulldog arguably the most charming and beloved dog on Earth.",
+            "title": "CEO of Frenchies"
+        },
+        "8cd036d3-89dd-4080-b958-0e2618a36ce3": {
+            "title": "Its 4:20 fo' shizzle",
+            "description": "\"Chillin' with my main pup, ridin' the West Coast vibe. Ain't nothin' like that dogg love, ya dig? From the LBC to wherever I be, my dog always rollin' with me. 🐾 #DoggLife\""
+        }
     },
-    "60f7d249a892b3a50fde365d": {
-      "email": "user4@example.com",
-      "name": "Bob White",
-      "password": "$2b$10$GpEPBgmSmyPCpq4rTld2f.kBLHn4oP7VolOGSfhp5eMv7lbVeBQwy",
-      "owner_img": "https://thispersondoesnotexist.com/",
-      "dog_img": "https://images.dog.ceo/breeds/buhund-norwegian/hakon2.jpg",
-      "friends": [
-        "60f7d249a892b3a50fde365f",
-        "60f7d249a892b3a50fde3660",
-        "60f7d249a892b3a50fde3661",
-        "60f7d249a892b3a50fde3662",
-        "60f7d249a892b3a50fde3663"
-      ]
-    },
-    "60f7d249a892b3a50fde365e": {
-      "email": "user5@example.com",
-      "name": "Charlie Green",
-      "password": "$2b$10$vbnjhA6JugKRy6me4uQoIOoTZag0fsAeAIML7NdnTq3YEaMS7IU3q",
-      "owner_img": "https://thispersondoesnotexist.com/",
-      "dog_img": "https://images.dog.ceo/breeds/labradoodle/lola.jpg",
-      "friends": [
-        "60f7d249a892b3a50fde365b",
-        "60f7d249a892b3a50fde3663",
-        "60f7d249a892b3a50fde365f"
-      ]
-    },
-    "60f7d249a892b3a50fde365f": {
-      "email": "user6@example.com",
-      "name": "Denise Blue",
-      "password": "$2b$10$o4ZS5txYLDvZGMccaUdXguoZkR6FYqLlD5mb1ds2hHBgZy/0M8BEu",
-      "owner_img": "https://thispersondoesnotexist.com/",
-      "dog_img": "https://images.dog.ceo/breeds/retriever-golden/n02099601_2796.jpg",
-      "friends": ["60f7d249a892b3a50fde365b", "60f7d249a892b3a50fde365c"]
-    },
-    "60f7d249a892b3a50fde3660": {
-      "email": "user7@example.com",
-      "name": "Edward Red",
-      "password": "$2b$10$hJ09Qy13N4C3IV/5urn63OnMrAe4IOlYLN2Yk8wsQ17ouF8nGD976",
-      "owner_img": "https://thispersondoesnotexist.com/",
-      "dog_img": "https://images.dog.ceo/breeds/appenzeller/n02107908_2090.jpg",
-      "friends": ["60f7d249a892b3a50fde365b"]
-    },
-    "60f7d249a892b3a50fde3661": {
-      "email": "user8@example.com",
-      "name": "Freya Yellow",
-      "password": "$2b$10$dK42vrC9D58zIcmH.6VlyuPqkm8fjovND33s4CTp/4vzWxFYdizfK",
-      "owner_img": "https://thispersondoesnotexist.com/",
-      "dog_img": "https://images.dog.ceo/breeds/malinois/n02105162_10640.jpg",
-      "friends": []
-    },
-    "60f7d249a892b3a50fde3662": {
-      "email": "user9@example.com",
-      "name": "George Purple",
-      "password": "$2b$10$49vk/Ygj50HbllI1d3tdnu0691NBNFat1rjcg1tra/MGvaejBCo22",
-      "owner_img": "https://thispersondoesnotexist.com/",
-      "dog_img": "https://images.dog.ceo/breeds/malinois/n02105162_10640.jpg",
-      "friends": []
-    },
-    "60f7d249a892b3a50fde3663": {
-      "email": "user10@example.com",
-      "name": "Hannah Pink",
-      "password": "$2b$10$EOvdvaIIHAYAOcth8FrMiuR3E38HVxsrJlFaJyMV8dSiBafFPIDpC",
-      "owner_img": "https://thispersondoesnotexist.com/",
-      "dog_img": "https://images.dog.ceo/breeds/mountain-swiss/n02107574_1661.jpg",
-      "friends": ["60f7d249a892b3a50fde365c", "60f7d249a892b3a50fde365d"]
-    },
-    "281e0cd8-f547-4cc6-8440-e536b45bd27a": {
-      "email": "shok221@gmail.com",
-      "name": "Emily Doe",
-      "password": "$2b$10$N55GAYXPlXqqeVLoS8ouE.RwPAfnQijPyCMGv6xPCkZwSZ7f8QPSS",
-      "owner_img": "https://thispersondoesnotexist.com/",
-      "dog_img": "https://images.dog.ceo/breeds/mountain-swiss/n02107574_1661.jpg",
-      "friends": [
-        "60f7d249a892b3a50fde365b",
-        "60f7d249a892b3a50fde365c",
-        "60f7d249a892b3a50fde365d",
-        "60f7d249a892b3a50fde365e",
-        "60f7d249a892b3a50fde365f",
-        "60f7d249a892b3a50fde3660",
-        "60f7d249a892b3a50fde3661",
-        "60f7d249a892b3a50fde3662",
-        "60f7d249a892b3a50fde3663"
-      ]
-    },
-    "1a9fe92a-2b1d-437f-8d65-6376d1445551": {
-      "email": "shok@gmail.com",
-      "name": "John Doe",
-      "password": "$2b$10$HsOeyMDa/UbtH8UV/YIOE.Lo40PquxUcO49l.ZI6Oxp3np7pw5Cpu",
-      "owner_img": "https://thispersondoesnotexist.com/",
-      "dog_img": "https://images.dog.ceo/breeds/mountain-swiss/n02107574_1661.jpg",
-      "friends": [
-        "60f7d249a892b3a50fde365b",
-        "60f7d249a892b3a50fde365c",
-        "60f7d249a892b3a50fde365d",
-        "60f7d249a892b3a50fde365e",
-        "60f7d249a892b3a50fde365f",
-        "60f7d249a892b3a50fde3660",
-        "60f7d249a892b3a50fde3661",
-        "60f7d249a892b3a50fde3662",
-        "60f7d249a892b3a50fde3663"
-      ]
-    },
-    "8d16b167-fe3d-49e0-8357-51a2c38c109c": {
-      "email": "shaked@gmail.com",
-      "name": "Shaked Hagag",
-      "password": "$2b$10$Me9/JCWgzZ.EqXJKkk2NYumUFA7Bvvx0eYG519ZtNNCWfLLyNoQgK",
-      "isAdmin": true,
-      "friends": [
-        "60f7d249a892b3a50fde365b",
-        "60f7d249a892b3a50fde365c",
-        "60f7d249a892b3a50fde365d",
-        "60f7d249a892b3a50fde365e",
-        "60f7d249a892b3a50fde365f",
-        "60f7d249a892b3a50fde3660",
-        "1a9fe92a-2b1d-437f-8d65-6376d1445551"
-      ],
-      "dog_img": "http://localhost:3030/uploads/1693663968974-IMG_1815.jpeg/8d16b167-fe3d-49e0-8357-51a2c38c109c"
+    "admin": {
+        "pages": {
+            "friends": true,
+            "editProfile": true,
+            "posts": true
+        },
+        "loginActivity": {
+            "8d16b167-fe3d-49e0-8357-51a2c38c109c": {
+                "loginTime": "2023-09-05T18:17:13.235Z",
+                "logoutTime": "2023-09-05T18:17:24.454Z"
+            },
+            "df15cfe4-1bc4-4a9e-a23a-b89a392d6bff": {
+                "loginTime": "2023-09-06T15:56:16.392Z",
+                "logoutTime": ""
+            },
+            "9bfdd13a-f153-49a8-aa33-fa36905a3449": {
+                "loginTime": "2023-09-06T15:56:57.105Z",
+                "logoutTime": ""
+            },
+            "4a3c8f85-1413-4a69-982f-01207d4f5a76": {
+                "loginTime": "2023-09-06T15:57:00.335Z",
+                "logoutTime": ""
+            },
+            "aa87a2b9-9a9a-4b86-959a-bfe51e49102b": {
+                "loginTime": "2023-09-06T15:57:42.996Z",
+                "logoutTime": ""
+            },
+            "5520779d-ac95-48b9-83b0-1b8eadde282d": {
+                "loginTime": "2023-09-06T15:58:48.490Z",
+                "logoutTime": ""
+            },
+            "b1693165-6db2-4669-b169-d6be7ee4a425": {
+                "loginTime": "2023-09-06T15:59:11.310Z",
+                "logoutTime": ""
+            },
+            "f4e92b11-cf8f-4710-bd6f-2a52cf823a57": {
+                "loginTime": "2023-09-06T16:06:14.604Z",
+                "logoutTime": ""
+            },
+            "b9382f12-985b-431f-ab24-397476ce9026": {
+                "loginTime": "2023-09-06T16:07:59.988Z",
+                "logoutTime": ""
+            },
+            "4ce9587e-d707-44bd-8d14-0a534eda5a22": {
+                "loginTime": "2023-09-06T16:09:44.142Z",
+                "logoutTime": ""
+            },
+            "e8cbeace-db5a-46ad-8714-075ecb86f38f": {
+                "loginTime": "2023-09-06T16:11:45.097Z",
+                "logoutTime": ""
+            }
+        }
     }
-  },
-  "posts": {
-    "b6f63153-e417-44e5-80be-2de3f359e2a2": {
-      "users_id": "281e0cd8-f547-4cc6-8440-e536b45bd27a",
-      "text": "Some text content here",
-      "image": "https://images.dog.ceo/breeds/bulldog-english/murphy.jpg",
-      "feeling": "Happy",
-      "timestamp": "2023-08-18T09:52:29.089Z"
-    },
-    "b6f63153-e417-44e5-80be-2de3f359e2a3": {
-      "users_id": "1a9fe92a-2b1d-437f-8d65-6376d1445551",
-      "text": "Hello World!",
-      "image": "https://images.dog.ceo/breeds/malinois/n02105162_6134.jpg",
-      "feeling": "Happy",
-      "timestamp": "2023-08-18T09:52:29.089Z"
-    },
-    "1d9b6e98-5979-4c8a-a35f-0f53991b4d52": {
-      "users_id": "1a9fe92a-2b1d-437f-8d65-6376d1445551",
-      "text": "This is a test post",
-      "image": "https://source.unsplash.com/random/600x300",
-      "feeling": "Happy",
-      "timestamp": "2023-08-18T09:52:29.089Z"
-    },
-    "45d66f0d-da96-4cb7-bc7b-a62e67dbe11c": {
-      "users_id": "60f7d249a892b3a50fde365d",
-      "text": "Hi there, This is my first Post!!!\n",
-      "image": "https://images.dog.ceo/breeds/malinois/n02105162_10640.jpg",
-      "feeling": "Happy",
-      "timestamp": "2023-08-18T17:52:29.089Z"
-    },
-    "6818227e-a9d0-4345-8b6f-f4ee0045db46": {
-      "users_id": "1a9fe92a-2b1d-437f-8d65-6376d1445551",
-      "text": "Just took my first swim at the lake today! 🏊‍♂️",
-      "image": "",
-      "feeling": "Happy",
-      "timestamp": 1692454926154
-    },
-    "5b6d4592-5a6d-4f62-8d0f-a1759e385a00": {
-      "users_id": "1a9fe92a-2b1d-437f-8d65-6376d1445551",
-      "text": "Rocking my new summer cut! ☀️ #FluffyNoMore",
-      "image": "",
-      "feeling": "Happy",
-      "timestamp": 1692454952182
-    },
-    "534e451e-50da-4e0e-9acb-0370df1f3c21": {
-      "users_id": "1a9fe92a-2b1d-437f-8d65-6376d1445551",
-      "text": "Shiba Ino",
-      "image": "https://images.dog.ceo/breeds/shiba/shiba-11.jpg",
-      "feeling": "sad",
-      "timestamp": 1692466974503
-    },
-    "b5b45ee8-fb64-4b8d-b32e-953bd3d08f51": {
-      "users_id": "1a9fe92a-2b1d-437f-8d65-6376d1445551",
-      "text": "This is my chiwawa",
-      "image": "https://images.dog.ceo/breeds/chihuahua/n02085620_2973.jpg",
-      "feeling": "happy",
-      "timestamp": 1692467123904
-    },
-    "b1196d78-dd8b-470a-8578-9659214da7ba": {
-      "users_id": "8d16b167-fe3d-49e0-8357-51a2c38c109c",
-      "text": "Trying to post from my new user! This is awesome. Also, this is an image of my dog, Leo!",
-      "image": "https://images.unsplash.com/photo-1561754050-9a1ee0470c73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      "feeling": "happy",
-      "timestamp": 1692817428085
-    }
-  },
-  "profiles": {
-    "8d16b167-fe3d-49e0-8357-51a2c38c109c": {
-      "description": "The French Bulldog, with its distinct bat ears and compact size, stands out as a favorite among dog lovers. Their affectionate and playful nature makes them perfect companions. Suited for city dwellers, they require less exercise than other breeds. Their expressive eyes and endearing expressions effortlessly capture hearts. Despite their small stature, they exude a big personality, ensuring there's never a dull moment with them around. Additionally, their adaptability to various living situations and their loyalty to their owners further amplify their greatness. This unique combination of characteristics makes the French Bulldog arguably the most charming and beloved dog on Earth.",
-      "title": "CEO of Frenchies"
-    }
-  },
-  "admin": {
-    "pages": {
-      "friends": true,
-      "posts": true,
-      "edit profile": true
-    }
-  }
 }

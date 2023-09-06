@@ -96,10 +96,6 @@ export const getDogImg = async (req, res) => {
     const user = data.users[id];
     const newPath = `uploads/${image}`;
     const dogImgPath = path.resolve(newPath); // Ensure you have the absolute path
-    console.log(
-      "🚀 ~ file: profile.js:94 ~ getDogImg ~ dogImgPath:",
-      dogImgPath
-    );
 
     // Extract the file extension and determine the content type
     const extname = String(path.extname(dogImgPath)).toLowerCase();

@@ -3,7 +3,11 @@ import cors from "cors";
 import morgan from "morgan";
 import { protect } from "./modules/auth.js";
 import cookieParser from "cookie-parser";
-import { getEnabledPages, updateEnabledPages } from "./handlers/admin.js";
+import {
+  getEnabledPages,
+  updateEnabledPages,
+  getAllUsersActivity,
+} from "./handlers/admin.js";
 import {
   createUser,
   getUserByIdRoute,
@@ -11,6 +15,8 @@ import {
   loginUser,
   verifyToken,
   getAllUsers,
+  removeUser,
+  logoutUser,
 } from "./handlers/user.js";
 import { loadData, saveData } from "./handlers/data.js";
 import { attachData } from "./modules/middleware.js";
@@ -28,7 +34,12 @@ import {
   editProfileTitle,
 } from "./handlers/profile.js";
 import multer from "multer";
+import path, { dirname } from "path";
+import { fileURLToPath } from "url";
+import { log } from "console";
 const app = express();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 app.use(
   cors({
@@ -40,6 +51,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
+app.use(express.static(path.join(__dirname, "public")));
 export let data = await loadData();
 
 const storage = multer.diskStorage({
@@ -54,7 +66,9 @@ const upload = multer({ storage: storage });
 
 // app.use("/api", protect, router);
 app.post("/signup", attachData(data), createUser);
+app.delete("/admin/remove-user", attachData(data), removeUser);
 app.post("/login", attachData(data), loginUser);
+app.post("/logout", attachData(data), logoutUser);
 app.post("/create-post", attachData(data), createPost);
 app.get("/posts", attachData(data), getAllPosts);
 app.get("/user-images", attachData(data), getUserImgs);
@@ -73,5 +87,9 @@ app.post("/upload", attachData(data), upload.single("image"), uploadDogImg);
 app.get("/uploads/:image/:id", attachData(data), getDogImg);
 app.get("/admin/pages", attachData(data), getEnabledPages);
 app.put("/admin/pages", attachData(data), updateEnabledPages);
+app.get("/admin/login-activity", attachData(data), getAllUsersActivity);
+app.get("/readme.html", (req, res) => {
+  res.sendFile(path.join(path.dirname, "public", "README.html"));
+});
 
 export default app;

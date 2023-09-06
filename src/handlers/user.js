@@ -1,5 +1,4 @@
 import { v4 as uuidv4 } from "uuid";
-import prisma from "../db.js";
 import { hashPassword } from "../modules/auth.js";
 import { createToken, comparePassword } from "../modules/auth.js";
 import { saveData } from "./data.js";
@@ -56,6 +55,12 @@ const saveUser = async (data, email, password, name) => {
       name: name,
       password: hashedPassword,
     };
+    data.profiles[id] = {};
+    data.posts[id] = [];
+    const now = new Date();
+    data.admin.loginActivity[id] = {
+      loginTime: now,
+    };
 
     return id;
   } catch (error) {
@@ -94,9 +99,11 @@ export const createUser = async (req, res) => {
     }
     let id = await saveUser(data, email, password, name);
     const newUser = data.users[id];
-    const token = createToken(newUser);
+
     saveData(req.data);
-    res.status(201).json({ id: id, user: newUser, token: token });
+    // res.cookie("token", token);
+    loginUser(req, res);
+    // res.status(201).json({ id: id, user: newUser, token: token });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -106,7 +113,9 @@ export const loginUser = async (req, res) => {
   try {
     const { data } = req;
     const { email, password } = req.body;
-    const user = await findUserByEmail(email, data).user;
+    let user = await findUserByEmail(email, data);
+    const id = user.id;
+    user = user.user;
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
@@ -114,16 +123,39 @@ export const loginUser = async (req, res) => {
     if (!match) {
       return res.status(401).json({ message: "Incorrect password" });
     }
+    const loginActivity = data.admin.loginActivity;
+    if (!loginActivity[id]) {
+      loginActivity[id] = {};
+    }
+    loginActivity[id].loginTime = new Date();
+    loginActivity[id].logoutTime = "";
+
     const token = createToken(user);
+
     res.cookie("token", token, {
       maxAge: 10 * 24 * 60 * 60 * 1000,
       httpOnly: true,
       // secure: true, // Add this when we have HTTPS
     });
     res.header("withCredentials", true);
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Credentials", true);
-    res.status(200).json({ user: user, token: token });
+    res.status(200).json({ user: user, token: token, id: id });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const logoutUser = async (req, res) => {
+  try {
+    const { data } = req;
+    const { id } = req.body;
+    const loginActivity = data.admin.loginActivity;
+    if (!loginActivity[id]) {
+      loginActivity[id] = {};
+    }
+    loginActivity[id].logoutTime = new Date();
+    saveData(data);
+    res.clearCookie("token");
+    res.status(200).json({ message: "User logged out successfully" });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -144,6 +176,10 @@ export const verifyToken = async (req, res, next) => {
   try {
     const { data } = req;
     const userData = findUserByEmail(req.user.email, data);
+    const token = req.cookies.token;
+    if (!token) {
+      return res.status(401).json({ message: "Unauthorized" });
+    }
     const currentUser = userData.user;
     const currentUserId = userData.id;
     res.status(200).json({
@@ -171,6 +207,32 @@ export const getUserImgs = async (req, res) => {
     const dogImg = user.dog_img;
 
     res.status(200).json({ ownerImg, dogImg });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const removeUser = async (req, res) => {
+  try {
+    const { data } = req;
+    const { id } = req.body;
+    if (!id) {
+      return res.status(400).json({ error: "User not found." });
+    }
+    delete data.users[id];
+    delete data.profiles[id];
+    delete data.posts[id];
+    const users = data.users;
+    for (const userId in users) {
+      const user = users[userId];
+      if (user.friends.includes(id)) {
+        const index = user.friends.indexOf(id);
+        user.friends.splice(index, 1);
+      }
+    }
+
+    saveData(data);
+    res.status(200).json({ message: "User deleted successfully" });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

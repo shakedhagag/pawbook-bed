@@ -16,6 +16,12 @@ export const getAllFriends = async (req, res) => {
       res.send();
       return;
     }
+    if (!data.users[id].friends) {
+      res.status(204);
+      res.json({ message: "No friends huh?" });
+      res.send();
+      return;
+    }
     const friendsData = data.users[id].friends.map((friendId) => {
       const { name, dog_img, owner_img } = data.users[friendId];
       return { friendId, name, dog_img, owner_img };
@@ -110,6 +116,9 @@ export const followFriend = async (req, res) => {
       return;
     }
     const user = data.users[id];
+    if (!user.friends) {
+      user.friends = [];
+    }
     if (user.friends.includes(friendId)) {
       res.status(400);
       res.json({ message: "Friend already added" });

@@ -1,3 +1,5 @@
+import { saveData } from "./data.js";
+
 export const getEnabledPages = async (req, res) => {
   try {
     const { data } = req;
@@ -12,21 +14,32 @@ export const updateEnabledPages = async (req, res) => {
   try {
     const { data } = req;
     const { pages } = req.body;
-    console.log(
-      "🚀 ~ file: admin.js:15 ~ updateEnabledPages ~ pages:",
-      pages.items
-    );
+
+    let newPages = {};
     for (const page of pages.items) {
-      console.log("PAGE", page);
-      if (pages.items.includes(page)) {
-        data.admin.pages[page] = true;
-      } else {
-        data.admin.pages[page] = false;
-      }
+      newPages[page] = true;
     }
+    for (const key in data.admin.pages) {
+      data.admin.pages[key] = false;
+    }
+    data.admin.pages = {
+      ...data.admin.pages,
+      ...newPages,
+    };
 
     saveData(data);
     res.status(200).json({ message: "Pages updated successfully" });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const getAllUsersActivity = async (req, res) => {
+  try {
+    const { data } = req;
+    const userActivity = data.admin.loginActivity;
+    res.status(200).json({ userActivity });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
