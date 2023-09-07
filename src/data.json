@@ -264,9 +264,12 @@
     },
     "admin": {
         "pages": {
-            "friends": true,
-            "editProfile": true,
-            "posts": true
+            "friends": false,
+            "editProfile": false,
+            "posts": false,
+            "home": true,
+            "about": true,
+            "contact": true
         },
         "loginActivity": {
             "8d16b167-fe3d-49e0-8357-51a2c38c109c": {
@@ -372,6 +375,10 @@
             "8cd036d3-89dd-4080-b958-0e2618a36ce3": {
                 "logoutTime": "2023-09-07T08:42:50.054Z",
                 "loginTime": "2023-09-07T08:42:22.493Z"
+            },
+            "71ba9045-31d3-47b5-9a1d-8c5ce2e6054a": {
+                "loginTime": "2023-09-07T08:58:49.463Z",
+                "logoutTime": ""
             }
         }
     }
