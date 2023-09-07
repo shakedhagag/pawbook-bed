@@ -250,69 +250,6 @@
             "image": "https://images.unsplash.com/photo-1518700445284-c7212fa9ab88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80",
             "feeling": "sad",
             "timestamp": 1694014107879
-        },
-        "e579df08-c9b7-476f-ae0e-23e953fa952f": {
-            "users_id": "f4e92b11-cf8f-4710-bd6f-2a52cf823a57",
-            "text": "This is a test post",
-            "image": "https://example.com/test-image.jpg",
-            "feeling": "happy",
-            "timestamp": 1694016118723
-        },
-        "2e4a32f6-a457-427e-83da-55f3f68ad9ef": {
-            "users_id": "f4e92b11-cf8f-4710-bd6f-2a52cf823a57",
-            "text": "This is a test post",
-            "image": "https://example.com/test-image.jpg",
-            "feeling": "happy",
-            "timestamp": 1694016131795
-        },
-        "9921f820-1602-4e8b-8d9e-d44f940ea22e": {
-            "users_id": "f4e92b11-cf8f-4710-bd6f-2a52cf823a57",
-            "text": "This is a test post",
-            "image": "https://example.com/test-image.jpg",
-            "feeling": "happy",
-            "timestamp": 1694016223397
-        },
-        "77941a72-9b1d-44eb-a67e-f4ac4b460bac": {
-            "users_id": "f4e92b11-cf8f-4710-bd6f-2a52cf823a57",
-            "text": "This is a test post",
-            "image": "https://example.com/test-image.jpg",
-            "feeling": "happy",
-            "timestamp": 1694016337299
-        },
-        "bf71681b-610f-42b7-9630-6b208e3d2ba3": {
-            "users_id": "8d16b167-fe3d-49e0-8357-51a2c38c109c",
-            "text": "This is a test post",
-            "image": "https://example.com/test-image.jpg",
-            "feeling": "happy",
-            "timestamp": 1694016705110
-        },
-        "00b411b1-3c99-448d-9335-3bf4d64ae895": {
-            "users_id": "8d16b167-fe3d-49e0-8357-51a2c38c109c",
-            "text": "This is a test post",
-            "image": "https://example.com/test-image.jpg",
-            "feeling": "happy",
-            "timestamp": 1694021127971
-        },
-        "c0eb160a-8e6f-4d08-ab34-39411089f1cf": {
-            "users_id": "8d16b167-fe3d-49e0-8357-51a2c38c109c",
-            "text": "This is a test post",
-            "image": "https://example.com/test-image.jpg",
-            "feeling": "happy",
-            "timestamp": 1694021206148
-        },
-        "a75c45eb-b4d2-4006-9a95-64a9be38a8f6": {
-            "users_id": "8d16b167-fe3d-49e0-8357-51a2c38c109c",
-            "text": "This is a test post",
-            "image": "https://example.com/test-image.jpg",
-            "feeling": "happy",
-            "timestamp": 1694021321486
-        },
-        "4c648761-8dd8-4d61-873f-aee4d37a850a": {
-            "users_id": "8d16b167-fe3d-49e0-8357-51a2c38c109c",
-            "text": "This is a test post",
-            "image": "https://example.com/test-image.jpg",
-            "feeling": "happy",
-            "timestamp": 1694021338914
         }
     },
     "profiles": {
@@ -327,17 +264,14 @@
     },
     "admin": {
         "pages": {
-            "friends": false,
-            "editProfile": false,
-            "posts": false,
-            "home": true,
-            "about": true,
-            "contact": true
+            "friends": true,
+            "editProfile": true,
+            "posts": true
         },
         "loginActivity": {
             "8d16b167-fe3d-49e0-8357-51a2c38c109c": {
-                "loginTime": "2023-09-05T18:17:13.235Z",
-                "logoutTime": "2023-09-05T18:17:24.454Z"
+                "loginTime": "2023-09-06T17:53:12.926Z",
+                "logoutTime": "2023-09-07T08:42:14.582Z"
             },
             "df15cfe4-1bc4-4a9e-a23a-b89a392d6bff": {
                 "loginTime": "2023-09-06T15:56:16.392Z",
@@ -434,6 +368,10 @@
             "e1cc7d44-c84d-4d28-876f-b4926a325408": {
                 "loginTime": "2023-09-06T17:45:24.806Z",
                 "logoutTime": ""
+            },
+            "8cd036d3-89dd-4080-b958-0e2618a36ce3": {
+                "logoutTime": "2023-09-07T08:42:50.054Z",
+                "loginTime": "2023-09-07T08:42:22.493Z"
             }
         }
     }
