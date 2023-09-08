@@ -37,7 +37,6 @@ export const getAllPosts = (req, res) => {
 export const deletePost = (req, res) => {
   const { data } = req;
   const { id } = req.body;
-  console.log("🚀 ~ file: post.js:40 ~ deletePost ~ id:", id);
   const posts = data.posts;
   if (!posts[id]) {
     return res.status(400).json({ error: "Post not found." });
