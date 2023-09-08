@@ -7,27 +7,24 @@ export const getAllFriends = async (req, res) => {
     if (!id) {
       res.status(400);
       res.json({ message: "Missing user id" });
-      res.send();
       return;
     }
     if (!data.users[id]) {
       res.status(404);
       res.json({ message: "User not found" });
-      res.send();
       return;
     }
     if (!data.users[id].friends) {
       res.status(204);
       res.json({ message: "No friends huh?" });
-      res.send();
       return;
     }
     const friendsData = data.users[id].friends.map((friendId) => {
       const { name, dog_img, owner_img } = data.users[friendId];
       return { friendId, name, dog_img, owner_img };
     });
-    res.status(200);
     res.json(friendsData);
+    res.status(200);
   } catch (err) {
     console.log(err);
     res.status(500);
